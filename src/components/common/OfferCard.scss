@@ -1,0 +1,60 @@
+@import "../../styles/mixins/media";
+@import "../../styles/mixins/fonts";
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 27px;
+  gap: 22px;
+  width: 100%;
+  border-radius: 10px;
+  min-height: 320px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%) no-repeat center center / cover;
+
+  &--background-1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/card-bg-1.webp') no-repeat center center / cover;
+  }
+
+  &--background-2 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/card-bg-2.webp') no-repeat center center / cover;
+    background-size: cover;
+  }
+
+  &--background-3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/card-bg-3.webp') no-repeat center center / cover;
+    background-size: cover;
+  }
+
+  &--background-4 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/card-bg-4.webp') no-repeat center center / cover;
+    background-size: cover;
+  }
+
+  @include tablet {
+    min-height: 350px;
+  }
+
+  &__title {
+    text-align: left;
+    line-height: 1;
+
+    @include lato-extra-bold(40px);
+
+    @include desktop {
+      @include lato-extra-bold(46px);
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    line-height: 1;
+
+    @include lato-extra-bold(16px);
+
+    @include desktop {
+      @include lato-extra-bold(24px);
+    }
+  }
+}

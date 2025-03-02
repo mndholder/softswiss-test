@@ -1,7 +1,6 @@
 {
-  "name": "cra-sass",
-  "version": "0.1.0",
-  "private": true,
+  "name": "softswiss-test",
+  "version": "1.0.0",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -10,6 +9,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.85.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -35,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "clsx": "^2.1.1"
   }
 }

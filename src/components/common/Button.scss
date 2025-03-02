@@ -1,0 +1,47 @@
+@import "../../styles/variables/colors";
+@import "../../styles/mixins/fonts";
+@import "../../styles/mixins/media";
+
+.application-button {
+  border-radius: 100px;
+  padding: 7px 40px;
+  color: $black;
+  border: 2px solid $yellow;
+  cursor: pointer;
+  line-height: 1.2;
+  @include lato-bold(16px);
+
+  @include tablet {
+    padding: 14px 40px;
+    @include lato-bold(22px);
+  }
+
+  &--primary {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: transparent;
+      color: $yellow;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $yellow;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &--tertiary {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: $yellow;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

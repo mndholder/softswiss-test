@@ -1,0 +1,49 @@
+@import "../../styles/mixins/media";
+@import "../../styles/mixins/fonts";
+
+.offers {
+  $this: &;
+
+  display: block;
+  padding: 50px 20px 20px;
+
+  .offers__title {
+    margin-bottom: 30px;
+  }
+
+  &__grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    #{$this}__card {
+      flex: 1 1 100%;
+
+      @include tablet {
+        flex: 1 1 calc(50% - 15px);
+
+        .offer-card__title {
+          max-width: 280px;
+        }
+      }
+
+      @include desktop {
+        .offer-card__title {
+          max-width: 426px;
+        }
+
+        &:first-child,
+        &:last-child {
+          flex-basis: 100%;
+
+          .offer-card__title {
+            max-width: 635px;
+
+            @include lato-extra-bold(74px);
+          }
+        }
+      }
+    }
+  }
+}

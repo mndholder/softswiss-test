@@ -1,0 +1,64 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/layout";
+@import "../../styles/mixins/animations";
+@import "../../styles/mixins/media";
+
+.main-application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  height: $mobile-header-height;
+  padding: 0 20px;
+  z-index: 1;
+
+  @include tablet {
+    padding: 0 30px;
+    height: $tablet-header-height;
+  }
+
+  @include desktop {
+    padding: 0 81px;
+  }
+
+  &__logo {
+    color: $pink;
+    width: 71px;
+
+    @include desktop {
+      width: 104px;
+    }
+
+    &:hover {
+      @include animation(shake);
+    }
+  }
+
+  &__links {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      color: $white;
+      gap: 28px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+
+    &:hover {
+      @include animation(shake);
+    }
+  }
+
+  &__menu {
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

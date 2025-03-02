@@ -1,0 +1,96 @@
+@import "../../styles/variables/colors";
+@import "../../styles/mixins/fonts";
+@import "../../styles/mixins/media";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/hero-bg.webp');
+  background-size: cover;
+  padding: 0 44px 34px;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+    height: 420px;
+  }
+
+  @include desktop {
+    padding: 91px 81px;
+  }
+
+  &__image {
+    width: 300px;
+    height: 336px;
+    margin-top: -100px;
+    margin-left: -20px;
+    order: 0;
+
+    @include tablet {
+      order: 1;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: -140px;
+    }
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
+  &__content {
+    order: 1;
+
+    @include tablet {
+      order: 0;
+      max-width: 411px;
+    }
+
+    @include desktop {
+      max-width: 693px;
+    }
+  }
+
+  &__title {
+    @include lato-extra-bold(32px);
+    margin-bottom: 17px;
+    line-height: 1;
+
+    @include tablet {
+      margin-bottom: 22px;
+      @include lato-extra-bold(48px);
+    }
+
+    @include desktop {
+      @include lato-extra-bold(72px);
+    }
+
+    &--pink {
+      color: $pink;
+    }
+  }
+
+  &__subtitle {
+    @include lato-bold(16px);
+    line-height: 1.2;
+    margin-bottom: 17px;
+
+    @include tablet {
+      margin-bottom: 22px;
+      @include lato-bold(22px);
+    }
+
+    @include desktop {
+      @include lato-bold(32px);
+    }
+
+    &--yellow {
+      color: $yellow;
+    }
+  }
+}

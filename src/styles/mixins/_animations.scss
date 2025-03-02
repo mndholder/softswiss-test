@@ -1,0 +1,3 @@
+@mixin animation($name, $duration: 0.3s, $timing: ease-out) {
+  animation: $name $duration $timing;
+}

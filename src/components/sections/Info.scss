@@ -1,0 +1,27 @@
+@import "../../styles/mixins/fonts";
+@import "../../styles/mixins/media";
+
+.info {
+  display: block;
+  padding: 30px 20px 50px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 1.2;
+    opacity: 0.6;
+    margin-bottom: 17px;
+
+    @include lato-bold(14px);
+
+    @include tablet {
+      @include lato-bold(16px);
+    }
+
+    @include desktop {
+      @include lato-bold(20px);
+    }
+  }
+}
