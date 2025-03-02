@@ -1,9 +1,9 @@
-@import "../../styles/variables/colors";
-@import "../../styles/variables/layout";
-@import "../../styles/mixins/animations";
-@import "../../styles/mixins/media";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .main-application-header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +14,7 @@
   z-index: 1;
 
   @include tablet {
+    position: static;
     padding: 0 30px;
     height: $tablet-header-height;
   }

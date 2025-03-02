@@ -10,6 +10,11 @@ import './Header.scss';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleOpenMenu = (value) => {
+    document.documentElement.classList.toggle('no-scroll', value);
+    setIsMenuOpen(value);
+  };
+
   return (
     <header className="main-application-header">
       <a href="/" className="main-application-header__logo">
@@ -23,7 +28,7 @@ function App() {
         </a>
       </div>
       <div className="main-application-header__menu">
-        <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} isOpen={isMenuOpen} />
+        <MenuButton onClick={() => handleOpenMenu(!isMenuOpen)} isOpen={isMenuOpen} />
         {isMenuOpen && <Menu />}
       </div>
     </header>

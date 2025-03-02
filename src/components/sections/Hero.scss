@@ -1,6 +1,5 @@
-@import "../../styles/variables/colors";
-@import "../../styles/mixins/fonts";
-@import "../../styles/mixins/media";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .hero {
   display: flex;
@@ -30,6 +29,7 @@
     margin-top: -100px;
     margin-left: -20px;
     order: 0;
+    animation: spin 30s linear infinite;
 
     @include tablet {
       order: 1;

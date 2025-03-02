@@ -1,3 +1,7 @@
-@mixin animation($name, $duration: 0.3s, $timing: ease-out) {
-  animation: $name $duration $timing;
+@mixin animation($name, $duration: 0.3s, $timing: ease-out, $iteration: 1) {
+  animation: $name $duration $timing $iteration;
+}
+
+@mixin transition($property, $duration: 0.3s, $timing: ease-out) {
+  transition: $property $duration $timing;
 }

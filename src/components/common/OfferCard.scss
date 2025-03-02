@@ -1,5 +1,4 @@
-@import "../../styles/mixins/media";
-@import "../../styles/mixins/fonts";
+@import "../../styles/mixins";
 
 .offer-card {
   display: flex;
@@ -12,6 +11,7 @@
   border-radius: 10px;
   min-height: 320px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%) no-repeat center center / cover;
+  will-change: transform;
 
   &--background-1 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url('../../assets/optimized/card-bg-1.webp') no-repeat center center / cover;
@@ -34,6 +34,11 @@
 
   @include tablet {
     min-height: 350px;
+  }
+
+  &:hover {
+    @include transition(transform, 0.3s);
+    transform: scale(1.02);
   }
 
   &__title {

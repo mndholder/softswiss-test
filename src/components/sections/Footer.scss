@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  min-height: 127px;
+  padding: 20px;
+  will-change: transform;
+
+  &__icon {
+    width: 78px;
+    height: auto;
+
+    &:hover {
+      @include animation(spin, 1s, linear);
+    }
+  }
+}

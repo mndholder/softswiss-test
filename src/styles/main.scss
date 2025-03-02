@@ -1,12 +1,7 @@
-@import './fonts/lato';
-
-@import "./variables/colors";
-@import "./variables/fonts";
-@import "./utils/to-rem";
-@import "./mixins/fonts";
-@import "./mixins/media";
-@import "./animations/shake";
-@import "./animations/slide";
+@import './fonts';
+@import "./variables";
+@import "./mixins";
+@import "./animations";
 
 * {
   box-sizing: border-box;
@@ -19,6 +14,10 @@ html, body {
   background-color: $deep-blue;
   color: $white;
   font-size: $root-font-size;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 a {
