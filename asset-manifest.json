@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/softswiss-test/static/css/main.113c5365.css",
-    "main.js": "/softswiss-test/static/js/main.69fc8fba.js",
+    "main.css": "/softswiss-test/static/css/main.2e4de4df.css",
+    "main.js": "/softswiss-test/static/js/main.d1bd0d92.js",
     "static/media/hero-bg.webp": "/softswiss-test/static/media/hero-bg.3c61546f06771a8f84df.webp",
     "static/media/rocket.svg": "/softswiss-test/static/media/rocket.eba1a30e9f436674aeb67622a2dbaab7.svg",
     "static/media/card-bg-4.webp": "/softswiss-test/static/media/card-bg-4.797c7fc9ef412c65be7f.webp",
@@ -14,11 +14,11 @@
     "static/media/menu.svg": "/softswiss-test/static/media/menu.533e6874d24ba0de6fa2a88f0c04e939.svg",
     "static/media/menu-close.svg": "/softswiss-test/static/media/menu-close.3a5ce3e4a9294fda07e9cf19751e2f42.svg",
     "index.html": "/softswiss-test/index.html",
-    "main.113c5365.css.map": "/softswiss-test/static/css/main.113c5365.css.map",
-    "main.69fc8fba.js.map": "/softswiss-test/static/js/main.69fc8fba.js.map"
+    "main.2e4de4df.css.map": "/softswiss-test/static/css/main.2e4de4df.css.map",
+    "main.d1bd0d92.js.map": "/softswiss-test/static/js/main.d1bd0d92.js.map"
   },
   "entrypoints": [
-    "static/css/main.113c5365.css",
-    "static/js/main.69fc8fba.js"
+    "static/css/main.2e4de4df.css",
+    "static/js/main.d1bd0d92.js"
   ]
 }
