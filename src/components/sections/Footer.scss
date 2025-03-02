@@ -9,7 +9,10 @@
   background-color: $black;
   min-height: 127px;
   padding: 20px;
+  color: $yellow;
   will-change: transform;
+
+  @include lato-bold(18px);
 
   &__icon {
     width: 78px;

@@ -6,6 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <RocketIcon className="footer__icon" />
+      <span>Exciting space adventure!</span>
     </footer>
   );
 }
