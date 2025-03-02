@@ -13,7 +13,8 @@ html, body {
   padding: 0;
   background-color: $deep-blue;
   color: $white;
-  font-size: $root-font-size;
+
+  @include lato-regular($root-font-size);
 
   &.no-scroll {
     overflow: hidden;
@@ -24,16 +25,6 @@ a {
   color: $white;
   text-decoration: none;
   cursor: pointer;
-
-  &:hover {
-    background-image: linear-gradient(90deg, $yellow, $pink);
-    color: transparent;
-    background-clip: text;
-
-    svg {
-      fill: url(#hoverGradient);
-    }
-  }
 }
 
 h1, h2, h3, h4, h5, h6, p {

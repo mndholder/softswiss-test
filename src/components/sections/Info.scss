@@ -1,6 +1,8 @@
 @import "../../styles/mixins";
 
 .info {
+  $this: &;
+
   display: block;
   padding: 30px 20px 50px;
 
@@ -21,6 +23,48 @@
 
     @include desktop {
       @include lato-bold(20px);
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox-label {
+    cursor: pointer;
+  }
+
+  &__checkbox:checked + #{$this}__text--hidden {
+    display: block;
+
+    @include animation(slide-from-top, 0.2s, ease-out);
+  }
+
+  &__checkbox + #{$this}__text--hidden + #{$this}__checkbox-label {
+    &:before {
+      content: 'Read more';
+      display: block;
+      color: $yellow;
+
+      @include lato-bold(14px);
+
+      @include tablet {
+        @include lato-bold(16px);
+      }
+
+      @include desktop {
+        @include lato-bold(20px);
+      }
+    }
+  }
+
+  &__checkbox:checked + #{$this}__text--hidden + #{$this}__checkbox-label {
+    &:before {
+      content: 'Collapse';
     }
   }
 }

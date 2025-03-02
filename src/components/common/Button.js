@@ -2,13 +2,15 @@ import clsx from 'clsx';
 
 import './Button.scss';
 
-function Button(props) {
+function Button({ element = 'button', ...props }) {
   const { children, variant = 'primary', ...rest } = props;
 
+  const Element = element;
+
   return (
-    <button className={clsx('application-button', `application-button--${variant}`)} {...rest}>
+    <Element className={clsx('application-button', `application-button--${variant}`)} {...rest}>
       {props.children}
-    </button>
+    </Element>
   );
 }
 

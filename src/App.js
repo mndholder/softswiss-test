@@ -8,7 +8,7 @@ import Footer from './components/sections/Footer';
 
 function App() {
   return (
-    <div className="main-application">
+    <div className="application">
       <AppHeader />
       <Hero />
       <Offers />

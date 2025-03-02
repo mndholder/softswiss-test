@@ -9,6 +9,7 @@
   background-size: cover;
   padding: 0 44px 34px;
   text-align: center;
+  overflow: hidden;
 
   @include tablet {
     text-align: left;
@@ -57,12 +58,14 @@
   }
 
   &__title {
-    @include lato-extra-bold(32px);
     margin-bottom: 17px;
     line-height: 1;
 
+    @include lato-extra-bold(32px);
+
     @include tablet {
       margin-bottom: 22px;
+
       @include lato-extra-bold(48px);
     }
 
@@ -76,12 +79,14 @@
   }
 
   &__subtitle {
-    @include lato-bold(16px);
     line-height: 1.2;
     margin-bottom: 17px;
 
+    @include lato-bold(16px);
+
     @include tablet {
       margin-bottom: 22px;
+
       @include lato-bold(22px);
     }
 

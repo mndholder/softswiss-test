@@ -9,7 +9,8 @@ function OfferCard({ className, backgroundVariant = 1, title, subtitle }) {
     <div className={clsx('offer-card', `offer-card--background-${backgroundVariant}`, className)}>
       <p className="offer-card__title">{title}</p>
       <p className="offer-card__subtitle">{subtitle}</p>
-      <Button variant="secondary">Learn More</Button>
+
+      <Button element="a" variant="secondary" href="/">Learn More</Button>
     </div>
   );
 }

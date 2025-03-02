@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.main-application-menu {
+.application-menu {
   display: block;
   position: fixed;
   left: 0;
@@ -9,6 +9,7 @@
   background-color: $black;
   width: 100%;
   height: calc(100% - $mobile-header-height);
+
   @include animation(slide-from-right, 0.1s);
 
   &__links {
@@ -21,5 +22,6 @@
 
   &__link {
     @include lato-bold(32px);
+    @include link;
   }
 }

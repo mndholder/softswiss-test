@@ -2,12 +2,14 @@
 @import "../../styles/mixins";
 
 .application-button {
+  display: inline-block;
   border-radius: 100px;
   padding: 7px 40px;
   color: $black;
   border: 2px solid $yellow;
   cursor: pointer;
   line-height: 1.2;
+
   @include lato-bold(16px);
 
   @include tablet {

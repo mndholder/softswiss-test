@@ -15,7 +15,7 @@ function Hero() {
         <p className="hero__subtitle">
           Where the possibilities are <span className="hero__subtitle--yellow">endless!</span>
         </p>
-        <Button>Learn More</Button>
+        <Button element="a" href="/">Learn More</Button>
       </div>
     </section>
   );
